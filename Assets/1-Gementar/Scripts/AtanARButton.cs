@@ -10,7 +10,21 @@ public class AtanARButton : MonoBehaviour
     public GameObject buttonPack;
     public GameObject bodyObj;
 
-    public List<Texture2D> postersBody;
+    private List<Texture2D> postersBody;
+
+    private void Start()
+    {
+        postersBody = new List<Texture2D>
+        {
+            AtanImageLoad.getImages(0),
+            AtanImageLoad.getImages(1),
+            AtanImageLoad.getImages(2),
+            AtanImageLoad.getImages(3),
+            AtanImageLoad.getImages(4)
+        };
+
+        replacePoster(AtanImageLoad.getImages(4));
+    }
 
     [Button]
     public void firstPoster()
