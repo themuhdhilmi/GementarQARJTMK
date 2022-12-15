@@ -39,7 +39,7 @@ public class AtanPosterHandler : MonoBehaviour
                 try
                 {
 
-                    if (item.name.Equals(AtanImageLoad.getImages(3).name))
+                    if (item.name.Equals(AtanImageLoad.getImages(2).name))
                     {
                         buttonRight.SetActive(false);
                     }
@@ -69,7 +69,7 @@ public class AtanPosterHandler : MonoBehaviour
                 try
                 {
 
-                    if (item.name.Equals(AtanImageLoad.getImages(0).name))
+                    if (item.name.Equals(AtanImageLoad.getImages(1).name))
                     {
                         buttonLeft.SetActive(false);
                     }

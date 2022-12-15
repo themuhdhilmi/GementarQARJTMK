@@ -4,16 +4,18 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 using UnityEngine.Playables;
 using DG.Tweening;
+using Vuforia;
 
 public class AtanARButton : MonoBehaviour
 {
     public GameObject buttonPack;
     public GameObject bodyObj;
-
     private List<Texture2D> postersBody;
 
     private void Start()
     {
+
+
         postersBody = new List<Texture2D>
         {
             AtanImageLoad.getImages(0),
